@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
     end
     
     def edit
-
+        @movie = session[:movies][params[:id].to_i]
     end
 
     def update
