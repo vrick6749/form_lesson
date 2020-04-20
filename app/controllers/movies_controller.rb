@@ -19,4 +19,12 @@ class MoviesController < ApplicationController
     def show
         @movie = session[:movies][params[:id].to_i -1]
     end
+    
+    def edit
+
+    end
+
+    def update
+
+    end
 end
