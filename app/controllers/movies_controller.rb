@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
     def index
         @movies = session[:movies]
+        @movies ||=[]
     end
 
     def create
@@ -9,7 +10,7 @@ class MoviesController < ApplicationController
         end
         session[:movies].push(params[:movie])
 
-        redirect_to movies_path(session[:movies].length -1)
+        redirect_to movies_path
     end
 
     def new
