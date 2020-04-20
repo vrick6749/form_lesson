@@ -3,7 +3,7 @@ class MoviesController < ApplicationController
     end
 
     def create
-    
+        
     end
 
     def new
