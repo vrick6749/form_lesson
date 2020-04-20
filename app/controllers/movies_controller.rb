@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
         end
         session[:movies].push(params[:movie])
 
-        redirect_to movie_path(session[:movies].length -1)
+        redirect_to movies_path(session[:movies].length -1)
     end
 
     def new
